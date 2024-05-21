@@ -1,4 +1,8 @@
 {
     "applogoText" : "Swag Labs",
-    "lockedMsgText" : "Epic sadface: Sorry, this user has been locked out."
+    "lockedMsgText" : "Epic sadface: Sorry, this user has been locked out.",
+    "firstname" : "Petter",
+    "lastname" : "Parker",
+    "postalcode" : "533236",
+    "orderConfirmationMsg" : "Thank you for your order!"
 }
