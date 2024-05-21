@@ -3,11 +3,12 @@ require('dotenv').config();
 const indexPage = require('../pages/ui_pages/indexpage')
 const data = require('../data/ui_data.json')
 
-var loginPage,homePage,checkoutPage
+var loginPage,homePage,checkoutPage,sideBarValidation
 test.beforeEach("Launch URL" , async ({ page }) => {
     loginPage = new indexPage.LoginPage(test,page);
     homePage = new indexPage.HomePage(test,page);
     checkoutPage = new indexPage.CheckoutPage(test,page);
+    sideBarValidation = new indexPage.SideBarValidation(test,page)
     await loginPage.launchUrl(process.env.baseUrl);
     await page.waitForTimeout(parseInt(process.env.small_timeout));
 })
@@ -43,5 +44,17 @@ test("Testing the checkout functionality", async({ page }) => {
     await checkoutPage.checkoutFunctionality(data.firstname,data.lastname,data.postalcode);
     await expect(await checkoutPage.orderConfirmationMsg).toHaveText(data.orderConfirmationMsg);
     await checkoutPage.clickOnBackToHomeButton();
+    await loginPage.logoutFunctionality();
+})
+
+test("Testing the elements present in the side bar" , async ({ page }) => {
+    await loginPage.loginFunctionality(process.env.standarduser,process.env.password);
+    await expect(await loginPage.appTitle).toHaveText(data.applogoText);
+    await sideBarValidation.clickOnSideBarButton();
+    for (var element of data.sideBarIds) {
+        await page.waitForTimeout(parseInt(process.env.small_timeout))
+        await expect(sideBarValidation.sideBarElement(element)).toBeVisible();
+    }
+    await sideBarValidation.clickOnCloseButton();
     await loginPage.logoutFunctionality();
 })
