@@ -21,7 +21,7 @@ exports.LoginPage = class LoginPage {
 
     async logoutFunctionality() {
         await executeStep(this.test,this.openMenuButton,"click","Enter the open menu button");
-        await this.page.waitForTimeout(parseInt(process.env.small_timeout));
+        //await this.page.waitForTimeout(parseInt(process.env.small_timeout));
         await executeStep(this.test,this.logoutButton,"click","Click on logout button");
     }
 }

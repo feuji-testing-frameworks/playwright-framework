@@ -1,7 +1,7 @@
 const { executeStep } = require('../../tests/utils/utils')
 require('dotenv').config();
 
-exports.HomePage = class HomePage {
+exports.AddToCartPage = class AddToCartPage {
 
     constructor(test,page) {
         this.test = test;
