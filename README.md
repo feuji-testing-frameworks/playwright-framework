@@ -19,7 +19,7 @@ Before you begin, ensure you have met the following requirements:
 ### Installation
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/playwright-js-project.git
+   https://github.com/feuji-testing-frameworks/playwright-framework.git
     cd playwright-js-project
     ```
 
@@ -46,15 +46,3 @@ Configure your Playwright settings in the `playwright.config.js` file.
     ```bash
     npx playwright show-report
     ```
-
-### Writing Tests
-Create your test files in the `tests` directory. Use the following template to create a new test:
-
-```javascript
-const { test, expect } = require('@playwright/test');
-
-test('example test', async ({ page }) => {
-  await page.goto('https://example.com');
-  const title = await page.title();
-  expect(title).toBe('Example Domain');
-});
