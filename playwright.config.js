@@ -38,6 +38,34 @@ module.exports = defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+     // UI Testing
+     {
+      name: 'UI Tests',
+      use: {
+        // Add your UI-specific configuration here
+        browserName: 'chromium', // or 'firefox', 'webkit'
+        // Add any additional UI-specific settings here
+      },
+      testMatch: 'tests/ui_tests.spec.js'
+    },
+
+    // API Testing
+    {
+      name: 'API Tests',
+      use: {
+        // Add your API-specific configuration here
+        // For example, you might use Axios or another HTTP library for API testing
+      },
+      testMatch: 'tests/api_tests.spec.js'
+    },
+
+    // Mobile Testing
+    {
+      name: 'Mobile Tests',
+      use: { ...devices['Pixel 4'] }, // or any other mobile device configuration
+      testMatch : 'tests/mobile_tests.spec.js'
+    },
+
     // {
     //   name: 'chromium',
     //   use: { ...devices['Desktop Chrome'] },
@@ -55,10 +83,10 @@ module.exports = defineConfig({
     // },
 
     /* Test against mobile viewports. */
-    {
-      name: 'Mobile Chrome',
-      use: { ...devices['Pixel 4'] },
-    },
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: { ...devices['Pixel 4'] },
+    // },
     // {
     //   name: 'Mobile Safari',
     //   use: { ...devices['iPhone 12'] },
