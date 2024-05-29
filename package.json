@@ -13,6 +13,7 @@
     "allure-playwright": "^2.15.1"
   },
   "dependencies": {
+    "allure-commandline": "^2.29.0",
     "dotenv": "^16.4.5",
     "faker": "^5.5.3",
     "playwright": "^1.44.0"

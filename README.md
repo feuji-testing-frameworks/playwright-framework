@@ -26,6 +26,7 @@ Before you begin, ensure you have met the following requirements:
 2. **Install dependencies:**
     ```bash
     npm install @playwright/test
+    npm install allure-playwright allure-commandline
     ```
 
 ### Configuration
@@ -45,4 +46,10 @@ Configure your Playwright settings in the `playwright.config.js` file.
 3. **Generate and view test reports:**
     ```bash
     npx playwright show-report
+    ```
+4. **Generate and view allure reports :**
+    ```
+    allure generate allure-results -o allure-report --clean
+
+    allure open allure-report
     ```
