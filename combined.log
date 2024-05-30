@@ -59,3 +59,47 @@
 2024-05-22T13:07:36.231Z [info]: Booking data updated successfully for Booking ID:
 2024-05-22T13:07:37.269Z [info]: Booking data partially updated successfully for Booking ID:
 2024-05-22T13:07:38.336Z [info]: Booking data deleted successfully for Booking ID:
+2024-05-30T04:53:02.880Z [info]: Token generated successfully:
+2024-05-30T04:53:03.923Z [info]: New booking created successfully, Booking ID:
+2024-05-30T04:53:04.993Z [info]: Booking IDs response body:
+2024-05-30T04:53:06.086Z [info]: Booking data fetched successfully for Booking ID:
+2024-05-30T04:53:07.131Z [info]: Booking data updated successfully for Booking ID:
+2024-05-30T04:53:08.152Z [info]: Booking data partially updated successfully for Booking ID:
+2024-05-30T04:53:09.225Z [info]: Booking data deleted successfully for Booking ID:
+2024-05-30T05:03:49.206Z [info]: Token generated successfully:
+2024-05-30T05:03:50.247Z [info]: New booking created successfully, Booking ID:
+2024-05-30T05:03:51.309Z [info]: Booking IDs response body:
+2024-05-30T05:03:52.374Z [info]: Booking data fetched successfully for Booking ID:
+2024-05-30T05:03:53.430Z [info]: Booking data updated successfully for Booking ID:
+2024-05-30T05:03:54.506Z [info]: Booking data partially updated successfully for Booking ID:
+2024-05-30T05:03:55.553Z [info]: Booking data deleted successfully for Booking ID:
+2024-05-30T05:05:53.510Z [info]: Token generated successfully:
+2024-05-30T05:05:54.588Z [info]: New booking created successfully, Booking ID:
+2024-05-30T05:05:55.904Z [info]: Booking IDs response body:
+2024-05-30T05:05:56.958Z [info]: Booking data fetched successfully for Booking ID:
+2024-05-30T05:05:57.999Z [info]: Booking data updated successfully for Booking ID:
+2024-05-30T05:05:59.067Z [info]: Booking data partially updated successfully for Booking ID:
+2024-05-30T05:06:00.302Z [info]: Booking data deleted successfully for Booking ID:
+2024-05-30T05:11:02.013Z [info]: Token generated successfully:
+2024-05-30T05:11:03.082Z [info]: New booking created successfully, Booking ID:
+2024-05-30T05:11:04.365Z [info]: Booking IDs response body:
+2024-05-30T05:11:05.395Z [info]: Booking data fetched successfully for Booking ID:
+2024-05-30T05:11:06.441Z [info]: Booking data updated successfully for Booking ID:
+2024-05-30T05:11:07.475Z [info]: Booking data partially updated successfully for Booking ID:
+2024-05-30T05:11:08.542Z [info]: Booking data deleted successfully for Booking ID:
+2024-05-30T05:11:13.239Z [info]: create booking successful
+2024-05-30T05:11:15.321Z [info]: Booking IDs response body:
+2024-05-30T05:11:16.629Z [info]: Booking data fetched successfully for Booking ID:
+2024-05-30T05:12:38.999Z [info]: Token generated successfully:
+2024-05-30T05:12:40.051Z [info]: New booking created successfully, Booking ID:
+2024-05-30T05:12:41.123Z [info]: Booking IDs response body:
+2024-05-30T05:12:42.165Z [info]: Booking data fetched successfully for Booking ID:
+2024-05-30T05:12:43.198Z [info]: Booking data updated successfully for Booking ID:
+2024-05-30T05:12:44.223Z [info]: Booking data partially updated successfully for Booking ID:
+2024-05-30T05:12:45.294Z [info]: Booking data deleted successfully for Booking ID:
+2024-05-30T05:12:50.001Z [info]: create booking successful
+2024-05-30T05:12:51.441Z [info]: Booking IDs response body:
+2024-05-30T05:12:52.679Z [info]: Booking data fetched successfully for Booking ID:
+2024-05-30T05:12:52.974Z [info]: updated booking details successful
+2024-05-30T05:12:53.253Z [info]: upated partial booking data
+2024-05-30T05:12:53.550Z [info]: deleted booking details by booking id
