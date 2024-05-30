@@ -1,8 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const { FakerDataPage } = require('../pages/api_pages/faker_data');
 const faker = require('faker');
-const logger = console; // Replace this with the actual logger if you have one
-
+const logger = require('../tests/utils/logger');
 var authToken = 'mocked-token';
 var booking_id;
 
@@ -95,7 +94,7 @@ test('Mock API POST Request - Creating new Booking', async ({ page }) => {
     const responseBody = await response.json();
     expect(responseBody.bookingid).not.toBeNull();
     booking_id = responseBody.bookingid;
-    logger.info('New booking created successfully, Booking ID:', booking_id);
+    logger.info("create booking successful")
 });
 
 test('Mock API GET Request - Booking by Ids', async ({ page }) => {
@@ -130,7 +129,7 @@ test("Mock API PUT Request - Update the booking data based on booking id", async
     const data = await page.textContent('body')
     const jsonData = JSON.parse(data)
     console.log(jsonData);
-    logging.info("updated booking details successful")
+    logger.info("updated booking details successful")
     expect(jsonData.firstname).toBe("James");
     expect(jsonData.lastname).toBe("Bond");
     expect(jsonData.bookingid).toBe(booking_id);
@@ -147,7 +146,7 @@ test("Mock API Request- Update partial booking data", async ({ page }) => {
     const jsonData = JSON.parse(data);
     expect(jsonData.firstname).toBe("Ghost")
     expect(jsonData.lastname).toBe("Rider")
-    logging.info("upated partial booking data")
+    logger.info("upated partial booking data")
 })
 test("Mock API Request - Delete data with booking id", async ({ page }) => {
     await page.route(`**/booking/${booking_id}`, async route => {
@@ -158,5 +157,5 @@ test("Mock API Request - Delete data with booking id", async ({ page }) => {
     const data = await page.textContent('body');
     const jsonData = JSON.parse(data)
     expect(jsonData.message).toBe("Booking data is deleted successfully");
-    logging.info("deleted booking details by booking id")
+    logger.info("deleted booking details by booking id")
 })

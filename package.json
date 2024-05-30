@@ -16,6 +16,7 @@
     "allure-commandline": "^2.29.0",
     "dotenv": "^16.4.5",
     "faker": "^5.5.3",
-    "playwright": "^1.44.0"
+    "playwright": "^1.44.0",
+    "winston": "^3.13.0"
   }
 }
