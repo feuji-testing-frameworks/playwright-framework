@@ -65,6 +65,15 @@ module.exports = defineConfig({
       use: { ...devices['Pixel 4'] }, // or any other mobile device configuration
       testMatch : 'tests/mobile_tests.spec.js'
     },
+    {
+      name: 'Mock API Tests',
+      use: {
+        // Add your UI-specific configuration here
+        // browserName: 'chromium', // or 'firefox', 'webkit'
+        // Add any additional UI-specific settings here
+      },
+      testMatch: 'tests/mockapi_tests.spec.js'
+    },
 
     // {
     //   name: 'chromium',
